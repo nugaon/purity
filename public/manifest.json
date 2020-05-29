@@ -1,0 +1,21 @@
+{
+  "name": "Purity",
+  "short_name": "Purity",
+  "version": "0.0.4",
+  "manifest_version": 2,
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "tabs", "http://*/", "https://*/"],
+  "author": "nugaon",
+  "description": "Browse new web contents on the P2P networks with this Ethereum blockchain based extension",
+  "icons": {
+    "16": "favicon.ico",
+    "48": "favicon.ico",
+    "128": "favicon.ico"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+
+  }
+}

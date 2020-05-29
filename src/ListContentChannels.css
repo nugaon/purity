@@ -1,0 +1,49 @@
+.slick-prev::before, .slick-next::before {
+  content: normal !important;
+}
+
+.slick-prev, .slick-next {
+  font-size: 15px !important;
+  color: grey !important;
+}
+
+.channelContentListItem {
+  /* border-bottom: 1px solid aliceblue; */
+  padding: 12px 0px;
+}
+.channelContentListItem:last-child > .divider {
+  display: none;
+}
+.timegago {
+  color: grey;
+  font-style: italic;
+  font-size: 80%;
+}
+
+.channelBody {
+  margin-bottom: 12px;
+}
+
+.contentMeta {
+  color: #e1dcdc;
+  font-size: 80%;
+  text-decoration: underline;
+}
+
+/* LABELS START */
+
+.contentLabels {
+  color: black;
+  max-width: 350px;
+  margin: auto;
+}
+
+.activeLabel {
+  color: #53bac0;
+}
+.labelList {
+  margin: 12px 12px 0 12px;
+  color: white;
+}
+
+/* LABELS END */

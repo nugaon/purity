@@ -1,0 +1,92 @@
+{
+  "name": "Purity",
+  "version": "0.1.0",
+  "description": "Browse new web contents on the P2P networks with this Ethereum blockchain based application",
+  "author": "nugaon",
+  "private": true,
+  "dependencies": {
+    "animated-number-react": "0.0.2",
+    "bootstrap": "^4.4.1",
+    "crypto-js": "^3.3.0",
+    "electron-is-dev": "^1.2.0",
+    "eth-crypto": "^1.6.0",
+    "file-saver": "^2.0.2",
+    "filereader": "^0.10.3",
+    "marked": "^0.8.2",
+    "papaparse": "^5.2.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "react-simplemde-editor": "^4.1.0",
+    "react-slick": "^0.25.2",
+    "react-timeago": "^4.4.0",
+    "react-toastify": "^6.0.5",
+    "redux": "^4.0.5",
+    "sanitize-html": "^1.23.0",
+    "slick-carousel": "^1.8.1",
+    "store": "^2.0.12",
+    "typescript": "^3.8.3",
+    "web3": "^1.2.7"
+  },
+  "main": "public/electron.js",
+  "homepage": "./",
+  "scripts": {
+    "start-web": "react-scripts start",
+    "start": "rescripts start",
+    "build": "cross-env INLINE_RUNTIME_CHUNK=false rescripts build",
+    "test": "rescripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"cross-env BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\"",
+    "postinstall": "electron-builder install-app-deps",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "electron-builder build",
+    "electron-windows-pack": "electron-builder build -w"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "build": {
+    "appId": "network.purity.app",
+    "productName": "Purity",
+    "copyright": "Copyright © 2020 nugaon",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "extraResources": [
+      "p2pApps/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "devDependencies": {
+    "@rescripts/cli": "0.0.13",
+    "@rescripts/rescript-env": "0.0.11",
+    "@types/chrome": "0.0.93",
+    "@types/crypto-js": "^3.1.45",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.37",
+    "@types/papaparse": "^5.0.3",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "@types/web3": "^1.2.2",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "electron": "^8.2.4",
+    "electron-builder": "^22.6.0",
+    "wait-on": "^4.0.2"
+  }
+}

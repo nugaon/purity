@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+/* font-family: 'Press Start 2P', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Nixie One', cursive; */
+
+html {
+  overflow-y:scroll;
+  background-color: #282c34
+}
+
+@keyframes colorchange
+{
+  0%   {background-color: black;}
+  100% {background-color: #282c34;}
+}
+
+@-webkit-keyframes colorchange
+{
+  0%   {background-color: black;}
+  100% {background-color: #282c34;}
+}
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
+
+.rotate {
+	-webkit-animation: rotation 2s infinite linear;
+}
+
+#floatingLoading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1em;
+}
+
+/* FORM INPUTS START */
+
+.inputGroup > input {
+  border-radius: 0px !important;
+}
+
+.description {
+  font-style: italic;
+  color: #758e8e;
+  font-size: 80%;
+}
+
+.input-group > input {
+  border-radius: 0px !important;
+}
+
+.input-group-append > button {
+  border-radius: 0px !important;
+}
+
+.noBorder {
+  border-radius: 0px !important;
+}
+
+/* FORM INPUTS END */
+
+/* React notification */
+.react-notification-root {
+  position: inherit !important;
+}
+
+
+#root {
+  animation: colorchange 1.5s;
+  -webkit-animation: colorchange 1.5s;
+  background-color: #282c34;
+  z-index: -1;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  padding: 12px !important;
+  max-width: 640px !important;
+
+  /* align-items: center;
+  justify-content: top; */
+  font-family: 'Quicksand', sans-serif !important;
+  color: white !important;
+}
+
+.modal-open {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 24px;
+}
+
+.App-header h1 {
+}
+
+body {
+  padding-right: 0px !important;
+}
+
+.mainButtons {
+  /* border-right: #3b74b5 1px solid; */
+  color: #53bac0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+  cursor: pointer;
+  padding: .375rem .75rem;
+}
+
+.mainButtons:last-of-type {
+  border: none;
+  /* margin-right: 15px; */
+}
+
+.mainButtons:first-of-type {
+  /* margin-left: 15px; */
+}
+
+.mainButtonActive {
+  background-color: #53bac0;
+  color: black;
+}
+
+/* use bootstrap button */
+.regularButton {
+  border-radius: 0 !important;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+/* bootstrap overwrite */
+.card {
+  border-radius: 0 !important;
+}
+
+.btn-primary {
+  background-color: #53bac0 !important;
+  color: black !important;
+  border-color: #117a8b !important;
+}
+
+h2, h3, .form-label {
+  color: white;
+}
+
+h1 {
+  color: #53b9c0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.mainFontColor {
+  color: #53bac0;
+}
+
+.container {
+  padding: 24px 0 24px 0;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #53bac0;
+  border-radius: 50%;
+  display: inline-block;
+  color: black;
+  font-size: 15px !important;
+  font-style: normal;
+}
+
+.dotFull {
+  background-color: #53bac0;
+  border-radius: 50%;
+  display: inline-block;
+  color: black;
+  font-size: 25px !important;
+  font-style: normal;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right,
+  rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.dividerMaincolor {
+  padding-top: 0px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right,
+  rgba(83, 186, 192, 0), rgba(83, 186, 192, 0.75), rgba(83, 186, 192, 0));
+}
+
+#purityweb-logo {
+  font-size: 86px;
+
+  color: #62e4c7;
+  background-image: linear-gradient(92deg, #62e4c7 0%,#2637ab 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#clientBalance {
+  font-size: 32px;
+  color: #53bac0;
+}
+
+.listBox {
+  margin-top: 12px;
+}
+
+.marginBottomForChildren > * {
+  margin-bottom: 12px;
+}
+
+.marginBottom {
+  margin-bottom: 12px;
+}
+
+.marginTop {
+  margin-top: 12px;
+}
+
+.marginBottom:last-child {
+  margin-bottom: 0px;
+}
+
+.paddingBetween > * {
+  margin: 0px 6px;
+}
+
+.iconButton {
+  cursor: pointer;
+  color: #53b9c0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.activeLink {
+  cursor: pointer;
+  color: #98feff !important;
+  text-decoration: underline !important;
+}
+
+.currency {
+  font-size: 50%;
+}
+
+.biggerText {
+  font-size: 200%;
+}
+
+.noContent {
+  font-style: italic;
+  margin: 12px;
+  color: #e1dcdc;
+}
+
+.new-line {
+  display: block !important;
+}
+
+.left-content {
+  text-align: left !important;
+}
+
+.channelName {
+  font-weight: bold;
+}
+
+.list-group-bottom {
+  background-color: #6c757d;
+  color: white;
+  min-height: 40px;
+  align-items: center;
+}
+
+.list-group-item {
+  padding: 0px 15px !important;
+}
+
+/* texts */
+
+.loading {
+  color: #53bac0;
+}
+
+/* Animations */
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+/* */
+
+.errorMessage {
+  color: red;
+}

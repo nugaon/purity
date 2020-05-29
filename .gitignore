@@ -1,0 +1,5 @@
+node_modules/
+build/
+dist/
+p2pApps/
+temp/*
