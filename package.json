@@ -12,7 +12,7 @@
     "eth-crypto": "^1.6.0",
     "file-saver": "^2.0.2",
     "filereader": "^0.10.3",
-    "marked": "^0.8.2",
+    "marked": "^4.0.10",
     "papaparse": "^5.2.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
